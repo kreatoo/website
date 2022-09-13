@@ -1,0 +1,51 @@
+body {
+  font-family: monospace !important;
+  background-color: #191B1C !important;
+  color: #fff !important; }
+
+a {
+  text-decoration: none;
+  color: gray !important; }
+
+a:hover {
+  transition: 0.4s !important;
+  color: #fff !important; }
+
+.ascii {
+  color: gray !important;
+  top: 50%; }
+
+span::before {
+  content: "\A";
+  white-space: pre; }
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); }
+
+#shadowBox {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid; }
+
+.rainbow {
+  background: linear-gradient(90deg, red 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, red 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 5s linear infinite;
+  background-size: 400% 100%; }
+
+@keyframes rainbow_animation {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
